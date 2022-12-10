@@ -1,0 +1,14 @@
+Main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Main button{
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(50deg, rgb(141, 241, 141), rgb(44, 215, 44));
+    cursor: pointer;
+}

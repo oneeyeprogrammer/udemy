@@ -1,0 +1,8 @@
+console.log(100)
+console.log(100.100)
+console.log(1.2)
+console.log(100.123)
+console.log(0xFF)
+console.log(0xabcd)
+console.log(0b1001)
+console.log(0o10)

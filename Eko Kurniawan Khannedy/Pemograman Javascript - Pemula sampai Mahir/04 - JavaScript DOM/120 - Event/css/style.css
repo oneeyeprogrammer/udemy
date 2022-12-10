@@ -1,0 +1,15 @@
+Main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+Main  h1{
+    font-family: Roboto;
+}
+Main Canvas{
+    background: linear-gradient(30deg, rgb(54, 236, 54), rgb(20, 20, 231));
+    cursor: pointer;
+}

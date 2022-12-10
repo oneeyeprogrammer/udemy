@@ -1,0 +1,1 @@
+export const nama = `Usep Syaikal Arifin`
