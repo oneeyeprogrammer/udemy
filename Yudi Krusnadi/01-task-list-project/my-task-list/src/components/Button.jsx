@@ -1,8 +1,8 @@
 /* Button Component */
-const Button = () => {
+const Button = ({ textButton }) => {
     return (
         <div className="button-container">
-            <button>Click</button>
+            <button>{textButton}</button>
         </div>
     );
 };

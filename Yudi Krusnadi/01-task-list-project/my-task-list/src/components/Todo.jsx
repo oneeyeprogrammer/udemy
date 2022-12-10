@@ -1,8 +1,12 @@
+import Button from "./Button";
+
 /* Todo Component */
 const Todo = () => {
     return (
         <div className="todo-container">
-            <h2>This is Todo Container</h2>
+            <p className="title-todo-container">title item</p>
+            <Button textButton="add" />
+            <Button textButton="delete" />
         </div>
     );
 };

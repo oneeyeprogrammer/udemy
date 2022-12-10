@@ -8,6 +8,8 @@ const App = () => {
         <div className="app-container">
             <Header />
             <Todo />
+            <Todo />
+            <Todo />
             <FormInput />
         </div>
     );
