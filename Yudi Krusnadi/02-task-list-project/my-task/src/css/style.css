@@ -22,7 +22,7 @@ body {
     width: 40vw;
     height: 50vh;
     /* padding: 10px; */
-    border: 1px solid #7c8da5;
+    /* border: 1px solid #7c8da5; */
     color: #e0e1dc;
 }
 
@@ -49,13 +49,13 @@ body {
     height: 10%;
     margin: 10px;
     padding: 0 10px;
-    background: white;
+    background: #e0e1dc;
     box-shadow: 0 3px 10px rgba(250, 247, 247, 0.2);
     border-radius: 5px;
 }
 .todo-container h3 {
     width: 60%;
-    font-size: 25px;
+    font-size: 2vw;
     color: #1d2538;
     /* font-weight: bold; */
 }
@@ -70,9 +70,81 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.8vw;
-    color: white;
-    background: #1d2538;
+    /* color: #1d2538; */
+    /* background: #1d2538; */
     border-radius: 5px;
     cursor: pointer;
 }
+
+.btn-edit {
+    background: #475b74;
+    border: #475b74;
+    color: #e0e1dc;
+}
+.btn-delete {
+    background: #7c8da5;
+    border: #7c8da5;
+    color: #e0e1dc;
+}
 /* End Todo Container */
+
+/* Form Input Container */
+.forminput-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    margin: 10px;
+    padding: 0 10px;
+    background: #e0e1dc;
+    box-shadow: 0 3px 10px rgba(250, 247, 247, 0.2);
+    border-radius: 5px;
+}
+.forminput-container input {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    outline: none;
+    background: #475b74;
+    border: none;
+    border-radius: 10px;
+    color: #e0e1dc;
+    font-size: 1.8vw;
+}
+.forminput-container .button-container {
+    width: 18%;
+    height: 80%;
+}
+.forminput-container .button-container button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: #e0e1dc;
+    font-weight: bold;
+    background: #7c8da5;
+}
+/* End Form Input Container */
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+    .todo-container h3 {
+        font-size: 4vw;
+    }
+    .todo-container .button-container button {
+        font-size: 2.8vw;
+    }
+    .app-container {
+        width: 70vw;
+    }
+    .forminput-container input {
+        font-size: 3.8vw;
+    }
+    .forminput-container .button-container button {
+        font-size: 2.9vw;
+    }
+}
+/* End Media Query */

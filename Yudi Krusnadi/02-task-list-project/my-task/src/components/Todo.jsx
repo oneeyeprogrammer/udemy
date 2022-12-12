@@ -4,8 +4,8 @@ const Todo = () => {
     return (
         <div className="todo-container">
             <h3>TodoList</h3>
-            <Button labelButton="add" />
-            <Button labelButton="remove" />
+            <Button labelButton="edit" variant="btn-edit" />
+            <Button labelButton="delete" variant="btn-delete" />
         </div>
     );
 };

@@ -1,7 +1,8 @@
-const Button = ({ labelButton }) => {
+const Button = ({ labelButton, variant }) => {
+    // console.log(`button-container ${variant}`);
     return (
         <div className="button-container">
-            <button>{labelButton}</button>
+            <button className={variant}>{labelButton}</button>
         </div>
     );
 };

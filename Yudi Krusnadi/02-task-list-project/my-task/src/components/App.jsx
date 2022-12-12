@@ -1,3 +1,4 @@
+import FormInput from "./FormInput";
 import Header from "./Header";
 import Todo from "./Todo";
 
@@ -8,6 +9,7 @@ const App = () => {
             <Todo />
             <Todo />
             <Todo />
+            <FormInput />
         </div>
     );
 };
