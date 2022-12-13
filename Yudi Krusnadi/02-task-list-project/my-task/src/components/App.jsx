@@ -4,7 +4,7 @@ import Header from "./Header";
 import Todo from "./Todo";
 
 const App = () => {
-    const [profile, setskills] = useState([
+    const [profile, setProfile] = useState([
         {
             id: 1,
             nama: "Usep Syaikal Arifin",
@@ -17,7 +17,19 @@ const App = () => {
         },
     ]);
 
-    const deleteTodoList = (id) => console.log(id);
+    const deleteTodoList = (id) => {
+        setProfile(profile.filter((prof) => prof.id !== id));
+    };
+
+    const addTodoList = (data) => {
+        const id = profile.length;
+        const newData = {
+            id: id + 1,
+            nama: "New Name",
+            job: data,
+        };
+        setProfile([...profile, newData]);
+    };
 
     return (
         <div className="app-container">
@@ -30,7 +42,7 @@ const App = () => {
                     deleteTodoList={deleteTodoList}
                 />
             ))}
-            <FormInput />
+            <FormInput addTodoList={addTodoList} />
         </div>
     );
 };
