@@ -55,7 +55,7 @@ body {
 }
 .todo-container h3 {
     width: 60%;
-    font-size: 2vw;
+    font-size: 2vmin;
     color: #1d2538;
     /* font-weight: bold; */
 }
