@@ -17,13 +17,18 @@ const App = () => {
         },
     ]);
 
-    const deleteTodoList = (id) => console.log("Delete Todo List");
+    const deleteTodoList = (id) => console.log(id);
 
     return (
         <div className="app-container">
             <Header />
             {profile.map((e) => (
-                <Todo key={e.id} job={e.job} deleteTodoList={deleteTodoList} />
+                <Todo
+                    key={e.id}
+                    id={e.id}
+                    job={e.job}
+                    deleteTodoList={deleteTodoList}
+                />
             ))}
             <FormInput />
         </div>
