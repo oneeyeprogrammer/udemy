@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     width: 40vmax;
     min-height: 50vmin;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 /* End app-container */
 
@@ -103,6 +103,7 @@ body {
     font-size: 1.5vmax;
     background: transparent;
     outline: none;
+    text-align: center;
     /* border: none; */
 }
 .form-input-container .button-container {
