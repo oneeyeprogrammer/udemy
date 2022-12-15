@@ -1,11 +1,14 @@
 import Button from "./Button";
 
-const TodoShow = () => {
+const TodoShow = ({ data, deleteTodoList }) => {
     return (
         <div className="todoshow-container">
-            <p>This is My Todo List</p>
+            <p>{data.nama}</p>
             <Button textButton="edit" />
-            <Button textButton="delete" />
+            <Button
+                textButton="delete"
+                action={() => deleteTodoList(data.id)}
+            />
         </div>
     );
 };

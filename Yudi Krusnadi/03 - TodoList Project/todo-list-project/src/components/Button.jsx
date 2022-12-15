@@ -1,15 +1,16 @@
 import PropTypes from "prop-types";
 
-const Button = ({ textButton }) => {
+const Button = ({ textButton, action }) => {
     return (
         <div className="button-container">
-            <button>{textButton}</button>
+            <button onClick={action}>{textButton}</button>
         </div>
     );
 };
 
 Button.propTypes = {
     textButton: PropTypes.string.isRequired,
+    // action: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
