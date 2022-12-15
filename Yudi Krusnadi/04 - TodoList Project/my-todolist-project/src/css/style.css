@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #1c1c1e, #1c1c1a);
+    font-family: GeForce;
+}
+
+/* app-container */
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 50vmin;
+    min-height: 40vmax;
+    border: 1px solid red;
+}
+/* End app-container */
+
+/* header-container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-container img {
+    width: 50%;
+}
+.header-container h1 {
+    font-size: 2vmax;
+    color: #fefefe;
+}
+/* End header-container*/
+
+/* todolist-container */
+.todolist-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    width: 100%;
+    height: 5vmin;
+    margin: 7px 0;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    background: #94fc05;
+}
+.todolist-container h1 {
+    width: 75%;
+    font-size: 1.5vmax;
+}
+.todolist-container .button-container {
+    width: 10%;
+    height: 90%;
+}
+.todolist-container .button-container button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End todolist-container */
