@@ -3,6 +3,7 @@ import TodoList from "./TodoList";
 import { useState } from "react";
 
 const App = () => {
+    /* Set Data */
     const [myData, setmyData] = useState([
         {
             id: 1,
@@ -15,6 +16,14 @@ const App = () => {
             job: "MongoDb Develoepr Professional",
         },
     ]);
+    /* End Set Data */
+
+    /* Delete Data From TodoList */
+    const deleteTodoList = (id) => {
+        setmyData(myData.filter((data) => data.id !== id));
+    };
+    /* End Delete Data From TodoList */
+
     return (
         <div className="app-container">
             {/* Header */}
@@ -23,7 +32,11 @@ const App = () => {
 
             {/* TodoList + Button */}
             {myData.map((data) => (
-                <TodoList key={data.id} data={data} />
+                <TodoList
+                    key={data.id}
+                    data={data}
+                    deleteTodoList={deleteTodoList}
+                />
             ))}
             {/* End TodoList + Button */}
 
