@@ -20,6 +20,15 @@ const App = () => {
     const [edit, setedit] = useState(false);
     /* End Set Data */
 
+    /* Handle Edit Modal */
+    const handleEditModal = () => {
+        setedit(true);
+    };
+    const closeEditModal = () => {
+        setedit(false);
+    };
+    /* End Handle Edit Modal */
+
     /* Add Data To TodoList */
     const addTodoList = (data) => {
         const id = myData.length;
@@ -49,6 +58,7 @@ const App = () => {
                     key={data.id}
                     data={data}
                     deleteTodoList={deleteTodoList}
+                    showModal={handleEditModal}
                 />
             ))}
             {/* End TodoList + Button */}
@@ -58,7 +68,7 @@ const App = () => {
             {/* End Form Input + Button */}
 
             {/* Edit Modal */}
-            <EditModal />
+            <EditModal show={edit} closeEditModal={closeEditModal} />
         </div>
     );
 };

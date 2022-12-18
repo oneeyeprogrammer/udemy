@@ -127,3 +127,88 @@ body {
     cursor: pointer;
 }
 /* End Form Input */
+
+/* Modal Container */
+.modal-container {
+    max-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(251, 246, 253, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container .box-modal {
+    width: 30vw;
+    height: 30vmin;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #94fc05, #b7ef70);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+}
+.modal-container .box-modal h2 {
+    font-size: 2.5vmax;
+}
+.modal-container .box-modal .box-modal-input-container {
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+}
+.modal-container .box-modal .box-modal-input-container input {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    background: #1c1c1c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 2vmin;
+}
+.modal-container
+    .box-modal
+    .box-modal-input-container
+    .box-modal-input-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+}
+.modal-container
+    .box-modal
+    .box-modal-input-container
+    .box-modal-input-button-container
+    .button-container {
+    width: 20%;
+    height: 80%;
+    margin: 0 5px;
+}
+.modal-container
+    .box-modal
+    .box-modal-input-container
+    .box-modal-input-button-container
+    .button-container
+    button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmax;
+    background: #fefefe;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+/* End Modal Container */
