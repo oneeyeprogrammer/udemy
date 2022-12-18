@@ -1,6 +1,8 @@
 import Header from "./Header";
 import TodoList from "./TodoList";
 import { useState } from "react";
+import FormInput from "./FormInput";
+import EditModal from "./EditModal";
 
 const App = () => {
     /* Set Data */
@@ -8,15 +10,26 @@ const App = () => {
         {
             id: 1,
             nama: "Usep Syaikal Arifin",
-            job: "ReactJs Developer Professional",
         },
         {
             id: 2,
             nama: "Asep Faisal Arifin",
-            job: "MongoDb Develoepr Professional",
         },
     ]);
+
+    const [edit, setedit] = useState(false);
     /* End Set Data */
+
+    /* Add Data To TodoList */
+    const addTodoList = (data) => {
+        const id = myData.length;
+        const newData = {
+            id: id + 1,
+            nama: data,
+        };
+        setmyData([...myData, newData]);
+    };
+    /* End Add Data To TodoList */
 
     /* Delete Data From TodoList */
     const deleteTodoList = (id) => {
@@ -41,6 +54,11 @@ const App = () => {
             {/* End TodoList + Button */}
 
             {/* Form Input + Button */}
+            <FormInput addTodoList={addTodoList} />
+            {/* End Form Input + Button */}
+
+            {/* Edit Modal */}
+            <EditModal />
         </div>
     );
 };
