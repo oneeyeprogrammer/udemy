@@ -6,7 +6,10 @@ const TodoListForm = ({ dataTodo, handleDeleteData, openModal }) => {
     return (
         <div className="todolistform-container">
             <h1>{dataTodo.nama}</h1>
-            <Button textButton="edit" action={openModal} />
+            <Button
+                textButton="edit"
+                action={() => openModal(dataTodo.id, dataTodo.nama)}
+            />
             <Button
                 textButton="delete"
                 action={() => handleDeleteData(dataTodo.id)}

@@ -23,14 +23,45 @@ const App = () => {
     };
 
     /* Handle Edit Data */
-    const [EditData, setEditData] = useState(false);
+    const [StatusShow, setStatusShow] = useState(false);
 
-    const openModal = () => {
-        setEditData(true);
+    const [EditModalData, setEditModalData] = useState({
+        id: "",
+        nama: "",
+    });
+
+    const setNama = (e) => {
+        setEditModalData({
+            ...EditModalData,
+            nama: e.target.value,
+        });
+    };
+
+    const openModal = (id, nama) => {
+        setStatusShow(true);
+        setEditModalData({
+            id,
+            nama,
+        });
     };
 
     const closeModal = () => {
-        setEditData(!EditData);
+        setStatusShow(!StatusShow);
+    };
+
+    const updateData = () => {
+        const { id, nama } = EditModalData;
+        const newData = { id, nama };
+        const newTodoData = Data;
+        console.log(newTodoData);
+        newTodoData.splice(id - 1, 1, newData);
+        console.log(newTodoData);
+        setData(newTodoData);
+        setStatusShow(!StatusShow);
+        setEditModalData({
+            id: "",
+            nama: "",
+        });
     };
 
     return (
@@ -49,7 +80,13 @@ const App = () => {
             ))}
 
             {/* Edit TodoList Form */}
-            <EditTodoList statusShow={EditData} closeModal={closeModal} />
+            <EditTodoList
+                statusShow={StatusShow}
+                closeModal={closeModal}
+                data={EditModalData}
+                change={setNama}
+                updateData={updateData}
+            />
         </div>
     );
 };
