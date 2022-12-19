@@ -1,0 +1,16 @@
+.header-container {
+    width: 20vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5vmax;
+    /* border: 1px solid red; */
+}
+.header-container img {
+    width: 50%;
+}
+.header-container h1 {
+    font-size: 1.5vmax;
+    color: white;
+}
