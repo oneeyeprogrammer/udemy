@@ -3,6 +3,7 @@ import Header from "./Header";
 import TodoList from "./TodoList";
 import { useState } from "react";
 import EditModal from "./EditModal";
+import AddData from "./AddData.";
 
 const App = () => {
     /* Data TodoList Fronm API example */
@@ -66,6 +67,16 @@ const App = () => {
         });
     };
 
+    /* Input New Data TodoList */
+    const addData = (value) => {
+        const id = Data.length;
+        const newData = {
+            id: id + 1,
+            nama: value,
+        };
+        setData([...Data, newData]);
+    };
+
     return (
         <div className="app-container">
             <Header textHeader="My TodoList Applications" />
@@ -77,6 +88,7 @@ const App = () => {
                     openModal={openModal}
                 />
             ))}
+            <AddData addData={addData} />
             <EditModal
                 triggerModal={TriggerModal}
                 closeModal={closeModal}

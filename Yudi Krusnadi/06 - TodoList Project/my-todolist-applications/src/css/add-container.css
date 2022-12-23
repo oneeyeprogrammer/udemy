@@ -1,4 +1,4 @@
-.todolist-container {
+.add-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,29 +9,40 @@
     height: 7vmin;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     position: relative;
-    animation-name: moveTodoListForm;
+    animation-name: opacityAppContainer;
     animation-duration: 5s;
     animation-timing-function: ease-out;
-    /* animation-iteration-count: 2; */
 }
-.todolist-container h1 {
+.add-container form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 100%;
+    height: 100%;
+}
+.add-container form input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     height: 80%;
     padding: 5px;
     border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
     font-size: 1.5vmax;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background: linear-gradient(180deg, #6e6d72, #6e6d70);
 }
-.todolist-container .button-container {
-    width: 8%;
+.add-container form .button-container {
+    width: 15%;
     height: 80%;
     margin: 0 3px;
 }
-.todolist-container .button-container button {
+.add-container form .button-container button {
     width: 100%;
     height: 100%;
     color: #fbfcfe;
@@ -41,23 +52,17 @@
     outline: none;
     cursor: pointer;
 }
-.edit {
-    background: green;
-}
-.delete {
-    background: red;
-}
 
 /* keyframe */
-@keyframes moveTodoListForm {
+@keyframes opacityAppContainer {
     0% {
-        top: -360px;
+        top: 360px;
     }
     50% {
-        top: 150px;
+        top: -150px;
     }
     75% {
-        top: -30px;
+        top: 30px;
     }
     100% {
         top: 0px;
