@@ -1,0 +1,59 @@
+.editmodal-container {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(36, 27, 27, 0.4);
+}
+.editmodal-container .box-editmodal-container {
+    width: 30vw;
+    min-height: 25vh;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background: linear-gradient(90deg, #1a1d26, #1a1d21);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.editmodal-container .box-editmodal-container input {
+    width: 90%;
+    min-height: 4.5vh;
+    border-radius: 0.3rem;
+    font-size: 1.5vmax;
+    border: none;
+    margin: 10px 0;
+    text-align: center;
+}
+.editmodal-container .box-editmodal-container .button-editmodal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 4.5vh;
+}
+.editmodal-container
+    .box-editmodal-container
+    .button-editmodal-container
+    .button-container {
+    width: 15%;
+    height: 100%;
+    margin: 0 5px;
+}
+.editmodal-container
+    .box-editmodal-container
+    .button-editmodal-container
+    .button-container
+    button {
+    width: 100%;
+    height: 100%;
+    color: #fbfcfe;
+    font-size: 1vmax;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
