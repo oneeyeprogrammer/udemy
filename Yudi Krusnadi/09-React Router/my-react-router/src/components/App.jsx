@@ -1,6 +1,7 @@
 import "../css/app-container.css";
 import Home from "../views/Home";
 import { Routes, Route } from "react-router-dom";
+import About from "../views/About";
 
 /* 
 1. Router Home -> "/"
@@ -13,6 +14,7 @@ const App = () => {
         <div className="app-container">
             <Routes>
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="/about" element={<About />} />
             </Routes>
         </div>
     );

@@ -1,0 +1,25 @@
+.about-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(180deg, #f4d35e, #f4d35a);
+}
+.about-container .box-about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 87%;
+    padding: 3vmin 3vmax;
+    background: linear-gradient(90deg, #faf0ca, #faf0cb);
+}
+.about-container .box-about-container h1 {
+    margin-bottom: 2vmin;
+}
+.about-container .box-about-container p {
+    text-align: justify;
+}

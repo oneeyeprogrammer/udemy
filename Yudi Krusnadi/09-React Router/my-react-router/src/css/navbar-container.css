@@ -5,6 +5,7 @@
     width: 100%;
     height: 8%;
     background: linear-gradient(90deg, #faf0ca, #faf0cf, #faf0cb, #faf0cf);
+    /* border: 1px solid blue; */
 }
 .navbar-container h1 {
     display: flex;
