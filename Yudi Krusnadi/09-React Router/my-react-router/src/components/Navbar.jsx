@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/navbar-container.css";
 
 const Navbar = () => {
@@ -6,13 +7,19 @@ const Navbar = () => {
             <h1>This is Navbar Component</h1>
             <ul>
                 <li>
-                    <a href="/home">Home</a>
+                    <Link className="anchor" to="/">
+                        Home
+                    </Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link className="anchor" to="/about">
+                        About
+                    </Link>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <Link className="anchor" to="/contact">
+                        Contact
+                    </Link>
                 </li>
             </ul>
         </div>

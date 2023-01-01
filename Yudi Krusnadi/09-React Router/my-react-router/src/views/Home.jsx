@@ -37,7 +37,7 @@ const Home = () => {
                 <h1 className="home-header-container">This is My Home</h1>
                 <div className="img-list-container">
                     {Data.map((data) => (
-                        <div className="img-container">
+                        <div className="img-container" key={data.id}>
                             <img
                                 key={data.id}
                                 src={data.image}
