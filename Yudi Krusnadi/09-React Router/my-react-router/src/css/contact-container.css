@@ -1,4 +1,4 @@
-.about-container {
+.contact-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
     flex-direction: column;
     background: linear-gradient(180deg, #f4d35e, #f4d35a);
 }
-.about-container .box-about-container {
+.contact-container .box-contact-container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -17,10 +17,10 @@
     padding: 3vmin 3vmax;
     background: linear-gradient(90deg, #faf0ca, #faf0cb);
 }
-.about-container .box-about-container h1 {
+.contact-container .box-contact-container h1 {
     margin-bottom: 2vmin;
 }
-.about-container .box-about-container p {
+.contact-container .box-contact-container p {
     text-align: justify;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 1vmin 1vmax;

@@ -26,6 +26,7 @@
     width: 60%;
     height: 10%;
     padding-left: 4rem;
+    cursor: pointer;
     /* border: 1px solid red; */
 }
 
@@ -50,9 +51,11 @@
     width: 100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .home-container .box-home-container .img-list-container .img-container h1 {
     width: 100%;
     font-size: 1.5vmax;
     text-align: center;
+    cursor: pointer;
 }

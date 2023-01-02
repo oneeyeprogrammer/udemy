@@ -16,6 +16,11 @@
     box-shadow: 5px 8px 6px -6px #f4d35a;
     /* border: 1px solid blue; */
 }
+.navbar-container h1 .link-header-container {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
 .navbar-container ul {
     display: flex;
     align-items: center;
@@ -30,4 +35,5 @@
     text-decoration: none;
     font-size: 1.6vmax;
     font-weight: bold;
+    color: black;
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import "../css/home-container.css";
+import MainLayout from "../layouts/MainLayout";
 
 const Home = () => {
     const [Data, setData] = useState([
@@ -32,24 +31,24 @@ const Home = () => {
     ]);
     return (
         <div className="home-container">
-            <Navbar />
-            <div className="box-home-container">
-                <h1 className="home-header-container">This is My Home</h1>
-                <div className="img-list-container">
-                    {Data.map((data) => (
-                        <div className="img-container" key={data.id}>
-                            <img
-                                key={data.id}
-                                src={data.image}
-                                alt={data.name}
-                                name="img"
-                            />
-                            <h1>{data.name}</h1>
-                        </div>
-                    ))}
+            <MainLayout>
+                <div className="box-home-container">
+                    <h1 className="home-header-container">This is My Home</h1>
+                    <div className="img-list-container">
+                        {Data.map((data) => (
+                            <div className="img-container" key={data.id}>
+                                <img
+                                    key={data.id}
+                                    src={data.image}
+                                    alt={data.name}
+                                    name="img"
+                                />
+                                <h1>{data.name}</h1>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <Footer />
+            </MainLayout>
         </div>
     );
 };

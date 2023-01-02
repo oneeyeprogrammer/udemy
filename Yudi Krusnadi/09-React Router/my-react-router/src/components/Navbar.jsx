@@ -4,7 +4,11 @@ import "../css/navbar-container.css";
 const Navbar = () => {
     return (
         <div className="navbar-container">
-            <h1>This is Navbar Component</h1>
+            <h1>
+                <Link to="/" className="link-header-container">
+                    This is Navbar Component
+                </Link>
+            </h1>
             <ul>
                 <li>
                     <Link className="anchor" to="/">
